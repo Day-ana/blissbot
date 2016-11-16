@@ -21,8 +21,8 @@
 module.exports = function(robot) {
   //  YOUR CODE HERE
   //  Example
-   robot.hear(/javascript/i, function(msg) {
-     return msg.send("I hate JavaScript!");
+   robot.hear(/blissme/i, function(msg) {
+     return msg.send("You are not special. You're not a beautiful and unique snowflake. You're the same decaying organic matter as everything else.");
    });
 }
 
