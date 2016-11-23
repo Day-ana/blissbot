@@ -41,13 +41,7 @@ var nature;
 nature = ["http://lorempixel.com/400/400/nature/", "http://lorempixel.com/400/400/cats/", "http://lorempixel.com/400/400/abstract/"];
 
 module.exports = function(robot) {
-  // Basic example of respond / send. If the user enters hi or hello the bot responds "Howdy!" 
-  return robot.respond(/blissme/i, function(msg) {
-    return msg.send("Howdy!");
-  });
-
   // Random Example
-  //If a user enters 'ship it' we return a random squirrel, which is popular for symbolizing shipping something with engineers
   return robot.hear(/blissful/i, function(msg) {
     return msg.send(msg.random(nature));
   });
